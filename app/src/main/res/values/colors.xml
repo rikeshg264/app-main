@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Button Theme Colors - Darker Blue Palette -->
+    <color name="button_primary">#1565C0</color>           <!-- Dark Blue - Main button color -->
+    <color name="button_primary_dark">#0D47A1</color>      <!-- Darker Blue - Pressed state -->
+    <color name="button_secondary">#1976D2</color>         <!-- Medium Blue - Secondary buttons -->
+    <color name="button_on_primary">#FFFFFF</color>        <!-- White - Text color on buttons -->
+    <color name="button_ripple">#64B5F6</color>            <!-- Light Blue - Ripple effect -->
+
+    <!-- Currency Rate Color Coding (List Background) -->
+    <color name="rate_very_high">#FFCCCC</color>      <!-- Dark Red/Pink for rate >= 100 -->
+    <color name="rate_high">#FFE0E0</color>           <!-- Light Red/Pink for rate >= 10 -->
+    <color name="rate_medium">#FFFFCC</color>         <!-- Light Yellow for rate >= 2 -->
+    <color name="rate_low">#CCFFCC</color>            <!-- Light Green for rate >= 1 -->
+    <color name="rate_very_low">#B3FFB3</color>       <!-- Dark Green for rate < 1 -->
+
+    <!-- Currency Rate Gradient Colors (Detail Screen Indicator Bar) -->
+    <!-- Very High (rate >= 100) - Red gradient -->
+    <color name="gradient_very_high_start">#FFFF0000</color>
+    <color name="gradient_very_high_mid">#FFFF6666</color>
+    <color name="gradient_very_high_end">#FFCCCC</color>
+
+    <!-- High (rate >= 10) - Orange/Red gradient -->
+    <color name="gradient_high_start">#FFFF6600</color>
+    <color name="gradient_high_mid">#FFFF9966</color>
+    <color name="gradient_high_end">#FFFFCC99</color>
+
+    <!-- Medium (rate >= 2) - Yellow gradient -->
+    <color name="gradient_medium_start">#FFFFFF00</color>
+    <color name="gradient_medium_mid">#FFFFFF66</color>
+    <color name="gradient_medium_end">#FFFFCC</color>
+
+    <!-- Low (rate >= 1) - Light Green gradient -->
+    <color name="gradient_low_start">#FF66FF66</color>
+    <color name="gradient_low_mid">#FF99FF99</color>
+    <color name="gradient_low_end">#CCFFCC</color>
+
+    <!-- Very Low (rate < 1) - Dark Green gradient -->
+    <color name="gradient_very_low_start">#FF00FF00</color>
+    <color name="gradient_very_low_mid">#FF66FF66</color>
+    <color name="gradient_very_low_end">#CCFFCC</color>
+</resources>

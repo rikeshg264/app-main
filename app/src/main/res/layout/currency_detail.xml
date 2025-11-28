@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_back_arrow"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="@android:color/black"
+            android:contentDescription="Go back"
+            android:layout_marginBottom="16dp"
+            tools:ignore="UseAppTint" />
+
+        <!-- Currency Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:id="@+id/currencyFlagImageView"
+                android:layout_width="48dp"
+                android:layout_height="32dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="Currency flag"
+                android:src="@android:drawable/ic_menu_mapmode" />
+
+            <TextView
+                android:id="@+id/currencyNameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:text="USD - United States Dollar"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+        <!-- Exchange Rate Display -->
+        <TextView
+            android:id="@+id/exchangeRateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.795"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Timestamp -->
+        <TextView
+            android:id="@+id/timestampTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="As of 24/04/2024 14:30"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Top Amount Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/topAmountEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="0"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:id="@+id/topCurrencyCodeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GBP"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="12dp"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+        <!-- Swap Button -->
+        <ImageButton
+            android:id="@+id/swapButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_menu_revert"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="@android:color/black"
+            android:contentDescription="Swap currencies"
+            android:layout_marginVertical="8dp"
+            tools:ignore="UseAppTint" />
+
+        <!-- Bottom Amount Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <EditText
+                android:id="@+id/bottomAmountEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="0"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:id="@+id/bottomCurrencyCodeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USD"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="12dp"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
